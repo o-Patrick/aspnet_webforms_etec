@@ -1,0 +1,19 @@
+
+            StrSql.Remove(0, StrSql.Length);
+            StrSql.Append("delete from TB_CLIENTE ");
+            StrSql.Append("where COD_CLIENTE = @COD_CLIENTE");
+
+            Conexao.Open();
+
+            SqlCommand Cmd = new SqlCommand(StrSql.ToString(), Conexao);
+
+            Cmd.Parameters.AddWithValue("@COD_CLIENTE", txtCodCliente.Text);
+
+            if (Cmd.ExecuteNonQuery() > 0)
+            {
+                Response.Write("<script> alert('Cliente excluído com sucesso!') </script>");
+            }
+            else
+            {
+                Response.Write("<script> alert('Não foi possível excluir cliente') </script>");
+            }

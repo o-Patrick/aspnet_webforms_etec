@@ -1,0 +1,64 @@
+clicar com botao direito ao lado do projeto e depois clicar em bco 
+logo em seguida aparecera uma pasta de banco de dados 
+pedir pra add e criar a tabela 
+ao clicar no bco -> do lado direito em propriedades -> conect string aonde ta armazenado o bco 
+***refazer o caminho da esturutara/linha da pasta para funcionar o projeto em outra máquina*** 
+clicar duas vezes em connect string para pegar o caminho(local ou url) do bco como forma de string
+inserir o @ para validar as barrinhas que estavam vermelhas 
+
+
+php 
+
+conexao 
+-
+-
+- 
+include 
+prepare ("Select 
+          Insert
+Parametro 
+Execute
+$Matriz = usada para guardar os dados
+$Linha [" "]
+
+para visualizar 
+em blocos e tabelas 
+
+Classe connection 
+
+classe preparar 
+***stringbuilder*** = classe
+
+o select é inserido no datable apartir da execução
+datable tabela que veio do bco 
+datarow linha de dados 
+
+para manipular o datatable é pelo dataset 
+cada celula ou quadradinho no datatable é dados armazenados
+ 
+
+
+using system.data -> usar banco de dados
+
+using system.data.SqlClient -> pode colocar qualquer banco de dados depois do "."
+
+StringBuilder cmdSql = new StringBuilder
+"new" = instanciando uma classe -> pegando ela e tranformando em obj
+
+ 
+Para viasualizar a tabela do formulario 
+ir na barra de ferramentas -> ir na categoria de dados -> gridview 
+Feita a tabela !!!!!!!!!!
+
+onde o visual studio conseguiria encontrar essas informaçoes para criar a tabela 
+atraves do:
+
+CmdSql.Append("select matricula, nome ");
+CmdSql.Append("from alunos ");
+CmdSql.Append("order by matricula");
+
+
+
+
+
+ 
